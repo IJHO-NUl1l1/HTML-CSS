@@ -3,20 +3,57 @@
 <head>
     <title>Dog and Cat Breeds Overview</title>
     <meta charset="utf-8">
+    <style>
+        body {
+            margin:0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size:50px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin:0;
+            padding: 30px;
+        }
+        #active {
+            color:red;
+        }
+        .saw {
+            color:gray;
+        }
+        .list {
+            border-right: 1px solid gray;
+            margin:0;
+            width: 270px;
+            padding: 10px;
+          
+        }
+        .doglist{
+            margin-top:0;
+        }
+        .catlist{
+            margin-bottom:0;
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">Dogs and Cats</a></h1>
-    <ol>
-        <li><a href="GoldenRetriever.html">Golden Retriever</a></li>
-        <li><a href="BorderCollie.html">Border Collie</a></li>
-        <li><a href="BerneseMountainDog.html">Bernese Mountain Dog</a></li>
-    </ol>
+    <div class="list">
+        <ol class="doglist">
+            <li><a href="GoldenRetriever.html" class="saw">Golden Retriever</a></li>
+            <li><a href="BorderCollie.html" class="saw" id="active">Border Collie</a></li>
+            <li><a href="BerneseMountainDog.html" class="saw">Bernese Mountain Dog</a></li>
+        </ol>
 
-    <ol>
-        <li> Norwegian Forest </li>
-        <li> Siberian Forest </li>
-        <li> American Curl </li>
-    </ol>
+        <ol class="catlist">
+            <li> Norwegian Forest </li>
+            <li> Siberian Forest </li>
+            <li> American Curl </li>
+        </ol>
+    </div>
 </body>
 </html>
